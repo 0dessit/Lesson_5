@@ -33,17 +33,22 @@ body {
 
 .nav {
   display: inline-block;
-  margin-left: 79px 0 0;
+  margin-left: 79px;
 }
 
 .nav_list {
+  padding-left: 0;
   margin: 0;
   list-style-type: none;
 }
 
 .nav-item {
-  margin-left: 20px;
+  margin-left: 21px;
   display: inline-block;
+}
+
+.nav-item:first-child {
+  margin-left: 0;
 }
 
 .menu_link {
