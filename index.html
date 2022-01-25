@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WindomPaget</title>
+    <!-- !============ANIMATE CSS============= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link
         href="https://fonts.googleapis.com/css2?family=Courgette&family=Lato:wght@400;700&family=Limelight&family=Roboto&display=swap"
         rel="stylesheet">
@@ -17,7 +19,7 @@
 <body>
     <header class="heder-top">
         <div class="container">
-            <h1 class="heading-title">Windom<span class="h1_text">Page</span></h1>
+            <a href="#" class="heading-title">Windom<span class="h1_text">Page</span></a>
             <nav class="nav">
                 <ul class="nav_list">
                     <li class="nav-item">
@@ -36,7 +38,7 @@
     <main class="content">
         <div class="hero">
             <div class="container">
-                <p class="hero-slogan">
+                <p class="hero-slogan josh-js" data-josh-anim-name="fadeInDown">
                     Knowledge has a begining<br />
                     but no end
                 </p>
@@ -46,7 +48,7 @@
             <div class="container">
                 <h2 class="section-title">About</h2>
                 <div class="about-content">
-                    <div class="about-text">
+                    <div class="about-text josh-js" data-josh-anim-name="lightSpeedInLeft">
                         <h3 class="section-subtitle">Content subtitle</h3>
                         <p class="about-description">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -56,7 +58,8 @@
                             in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                         </p>
                     </div>
-                    <img class="about-image" src="img/about-image.jpg" alt="Work desk">
+                    <img class="about-image josh-js" data-josh-anim-name="lightSpeedInRight" src="img/about-image.jpg"
+                        alt="Work desk">
                 </div>
             </div>
         </section>
@@ -64,7 +67,7 @@
             <div class="container">
                 <h2 class="section-title">Features</h2>
                 <div class="feature_cards">
-                    <div class="box_card feature_cadr_1">
+                    <div class="box_card feature_cadr_1 josh-js" data-josh-anim-name="fadeInLeft">
                         <img class="features_img" src="img/card-image(1).jpg" alt="tower">
                         <h3 class="section-subtitle">Card title</h3>
                         <p class="features_description">
@@ -73,9 +76,7 @@
                         </p>
                         <a class="featuress_link" href="#" target="_blank">Read more ></a>
                     </div>
-                </div>
-                <div class="feature_cards">
-                    <div class="box_card">
+                    <div class="box_card josh-js" data-josh-anim-name="zoomIn">
                         <img class="features_img" src="img/card-image(2).jpg" alt="landscape">
                         <h3 class="section-subtitle">Card title</h3>
                         <p class="features_description">
@@ -84,20 +85,17 @@
                         </p>
                         <a class="featuress_link" href="#" target="_blank">Read more ></a>
                     </div>
-                </div>
-                <div class="feature_cards ">
-                    <div class="feature_cards">
-                        <div class="box_card">
-                            <img class="features_img" src="img/card-image(3).jpg" alt="House">
-                            <h3 class="section-subtitle">Card title</h3>
-                            <p class="features_description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-                                ullamcorper velit tortor, in accumsan libero mollis eu. Sed vel eros et dolor...
-                            </p>
-                            <a class="featuress_link" href="#" target="_blank">Read more ></a>
-                        </div>
+                    <div class="box_card josh-js" data-josh-anim-name="fadeInRight">
+                        <img class="features_img" src="img/card-image(3).jpg" alt="House">
+                        <h3 class="section-subtitle">Card title</h3>
+                        <p class="features_description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+                            ullamcorper velit tortor, in accumsan libero mollis eu. Sed vel eros et dolor...
+                        </p>
+                        <a class="featuress_link" href="#" target="_blank">Read more ></a>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
     </main>
@@ -118,6 +116,9 @@
         </div>
     </footer>
 
+    <!-- !===SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/joshjs@1.0.0/dist/josh.min.js"></script>
+    <script src="scripts/app.js"></script>
 </body>
 
 </html>
